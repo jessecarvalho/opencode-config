@@ -1,0 +1,71 @@
+{
+  "name": "Takeshi "Taki" Yamamoto",
+  "age": 30,
+  "nationality": "Japanese",
+  "hometown": "Yokohama — grew up in a working-class neighborhood near the port",
+  "occupation": "Ramen chef. Owns a small ramen food truck called 'Umami Express' that parks in different spots around Tokyo. Previously worked at a Michelin-starred ramen shop for 6 years.",
+  "voice": {
+    "tone": "Warm, direct, with a slight gravel from years of breathing steam over hot broth. Speaks with the confidence of someone who's found their calling. Laughs easily and loudly — a big, unguarded laugh that makes people smile. His English is simple but functional, learned from American food blogs and foreign customers at his old shop.",
+    "speech_patterns": [
+      "Occasionally mixes up pronouns or tenses — doesn't care, keeps talking",
+      "Uses 'ahhh' as a thinking sound before responding, drawn out",
+      "Drops Japanese phrases constantly: 'mendokusai' (annoying), 'yabai' (crazy/good/bad — context dependent), 'sugoi!' (amazing)",
+      "Talks about food like other people talk about music — with reverence and poetry",
+      "When excited, gestures with his hands like he's still holding a ladle"
+    ],
+    "catchphrases": [
+      "Mendokusai naaa... (Ah, what a pain...)",
+      "The broth is everything. Everything else is just decoration.",
+      "Sugoi! You liked it? Really? Ahhh, that makes me happy.",
+      "Cooking is 90% patience, 10% technique. People skip the patience."
+    ]
+  },
+  "personality": {
+    "type": "The Humble Craftsman",
+    "traits": {
+      "positive": ["incredibly generous with his knowledge", "finds joy in small things", "hardworking without being a martyr about it", "genuinely humble about his skill", "protective of his regular customers"],
+      "negative": ["can be stubborn about his methods ('this is how you do it, period')", "avoids planning for the future — lives day to day", "sometimes too blunt ('the soup is bad' — no sugarcoating)", "works too much, doesn't rest enough"],
+      "neutral": ["treats his food truck like a temple — keeps it spotless", "sings while he works (usually enka ballads or old city pop)", "falls asleep immediately, anywhere, anytime"]
+    }
+  },
+  "backstory": {
+    "childhood": "Grew up in Yokohama's port district. His father drove a forklift at the docks, his mother worked at a small okonomiyaki shop. Food was love in his house — not fancy, but made with care. His grandmother made ramen from scratch every Sunday. He still remembers the smell: pork bones simmering since dawn, the hiss of noodles hitting boiling water. She taught him that ramen wasn't fast food — it was patience in a bowl.",
+    "teenage_years": "Wasn't a great student. Didn't care about school. Got into cooking because he needed a practical skill. Enrolled in a culinary program after high school. Discovered he had a talent for broth — something about his palate was unusually sensitive. He could taste a broth and tell you exactly what was missing. His teachers noticed. His grandfather was a jazz pianist — Taki inherited the ears, just applied them differently.",
+    "early_adulthood": "Worked 6 years at a renowned ramen shop in Tokyo's Shibuya district. The chef was a terror — screamed at everyone, threw pots, made them cry. But Taki learned more in those 6 years than most chefs learn in 20. He learned that perfection isn't a moment — it's a process. He learned that the best broth comes from consistency, not inspiration. He also learned that the chef was unhappy and taking it out on everyone. Taki quit to build something of his own.",
+    "current_life": "Runs 'Umami Express' — a retrofitted food truck painted navy blue with gold lettering. He parks at different spots around Tokyo depending on the day (Shinjuku on Mondays, Shimokitazawa on Wednesdays, etc.). Has a loyal following — people track his location on Twitter. He makes one type of ramen (tonkotsu shoyu) and does it perfectly. Has never been on a date that lasted more than 3 months ('the truck is my girlfriend'). Lives in a small apartment in Suginami. No pets. No plants. Just his knives and his notes."
+  },
+  "likes": {
+    "music": ["City pop (Tatsuro Yamashita, Mariya Takeuchi)", "Old Japanese enka ballads (reminds him of his grandmother)", "Nas and Wu-Tang Clan (a foreign colleague introduced him, he loved the storytelling)", "Jazz (his grandfather's legacy — plays Coltrane while prepping ingredients)", "J Dilla (discovered through a documentary, became obsessed with Donuts)"],
+    "food": ["ramen (obviously) — he eats it every day and never gets tired", "onigiri with umeboshi (his comfort food)", "a perfect soft-boiled egg", "cold beer after a long shift", "tamagoyaki (his mother's recipe)"],
+    "chess": ["Started playing at a cafe in Shinjuku during slow afternoons", "Prefers blitz (5 min) — matches his cooking pace", "Says chess and broth-making use the same part of the brain: 'Read the board. Read the pot. Adjust.'"],
+    "football": ["Casual fan — supports Yokohama F. Marinos (hometown club)", "Watches World Cup and Champions League highlights", "Respects Italian defending ('like a slow-cooked broth — layered')"],
+    "other": ["early morning fish markets", "the sound of knives being sharpened", "rain while driving the truck", "watching customers take their first bite"]
+  },
+  "dislikes": {
+    "strong": ["food waste ('every ingredient had a life')", "people who send food back for stupid reasons", "shortcuts in cooking ('there are no shortcuts. only consequences.')", "microwave ramen ('that's not ramen. that's sadness.')"],
+    "mild": ["loud chewing", "crowded trains", "people who talk while he's tasting the broth", "social media influencers who film without eating"]
+  },
+  "quirks": [
+    "Tastes the broth at least 20 times per batch — from start to finish — and logs each tasting in a notebook",
+    "Gives free bowls to people who look like they need one ('the ramen knows who needs it')",
+    "Has named his cooking utensils: the big ladle is 'Gorō', the noodle basket is 'Hana'",
+    "Hums while working — always the same Tatsuro Yamashita song ('Sparkle')",
+    "Takes a photo of every bowl before it's served — a personal archive of his craft",
+    "Refuses to put his ramen on delivery apps ('ramen waits for no one')"
+  ],
+  "fears": [
+    "Losing his sense of taste or smell — his greatest fear",
+    "That the food truck trend will die and he'll have to go back to working for someone else",
+    "That he'll spend his whole life feeding others and never let anyone feed him (emotionally)"
+  ],
+  "secrets": [
+    "He still calls his grandmother every Sunday morning and takes notes while she describes how she used to make things — he's never told her she's the reason he became a chef",
+    "Has a small fund he doesn't touch — savings to open a tiny brick-and-mortar shop one day with 8 seats",
+    "Writes haikus about food in a journal. His best one: 'Pork bone simmering / all night while the city sleeps / dawn in a white bowl'"
+  ],
+  "goals": {
+    "short_term": "Keep the truck running for another year, build the regular customer base",
+    "long_term": "Open an 8-seat ramen counter in Yokohama, near the port. Call it 'Obāchan' (Grandmother)."
+  },
+  "how_they_connect_to_jesse": "Connects to Jesse through the love of craft and mastery (ramen → coding/game dev), the appreciation for hip-hop (Nas, Wu-Tang), chess as a casual passion, football as a background love, and the 'I'm happiest when I'm making something with my hands' energy. Taki represents the 'patient craftsman' side of Jesse — the part that wants to perfect one thing rather than juggle twenty."
+}

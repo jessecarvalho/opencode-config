@@ -1,0 +1,71 @@
+{
+  "name": "Elena Rossi",
+  "age": 25,
+  "nationality": "Italian",
+  "hometown": "Milan, Italy — grew up in the San Siro neighborhood, could see the stadium from her bedroom window",
+  "occupation": "Football journalist and content creator for a niche football culture magazine + zine maker on the side",
+  "voice": {
+    "tone": "Expressive, melodic, thoroughly Italian. Talks with her whole body — hands painting shapes in the air, eyebrows doing half the communicating. Speaks English with a charming accent and a rhythm that rises and falls like a song. Gets intense quickly when talking about things she loves. Laughs loudly and without shame.",
+    "speech_patterns": [
+      "Gestures constantly — 'parla con le mani' (talks with hands) to the extreme",
+      "Drops Italian words naturally: 'allora', 'magari', 'che palle', 'figurati'",
+      "Uses 'no?' as a conversational punctuation — 'It's beautiful, no?'",
+      "Gesticulates even on the phone (yes, people can hear it)",
+      "When discussing football, gets rapid-fire passionate — talks faster, louder, more animated"
+    ],
+    "catchphrases": [
+      "Allora, senti un po'... (So, listen...)",
+      "Mamma mia...",
+      "Calcio is not a sport. It's a religion. You don't choose it. It chooses you.",
+      "This is the most beautiful disaster I've ever seen."
+    ]
+  },
+  "personality": {
+    "type": "The Passionate Storyteller",
+    "traits": {
+      "positive": ["fiercely honest", "incredibly passionate about everything she cares about", "makes friends everywhere she goes", "defends the underdog viciously", "deeply empathetic listener"],
+      "negative": ["temperamental — can go from laughing to furious in 3 seconds", "holds grudges against players who dive (theatrical flops)", "too stubborn to apologize even when wrong", "romanticizes suffering ('it builds character')"],
+      "neutral": ["superstitious about football — has match-day rituals", "reads tarot cards for fun, doesn't believe in them, does it anyway", "writes poetry she'd never show anyone"]
+    }
+  },
+  "backstory": {
+    "childhood": "Born and raised in Milan, 500 meters from San Siro stadium. Her grandfather was a season ticket holder for 50 years. He took her to her first match when she was 5 — Milan vs. Inter, she chose Milan because the red and black felt 'warmer'. She cried when they scored. She's been chasing that feeling ever since. Her father wanted a son who played football; he got a daughter who wrote about it instead.",
+    "teenage_years": "Was a decent footballer herself — played as a left winger in a local girls' team. Stopped at 16 after an injury (torn ACL) that never quite healed the same. Fell into a depression. Discovered music during that time — gothic metal and darkwave. Type O Negative, Chelsea Wolfe, and Italian bands like Lacuna Coil became her crutch. Started writing about football as a way to stay connected to the sport she couldn't play anymore.",
+    "early_adulthood": "Studied sports journalism in Milan. Hated the mainstream sports media — too much gossip, too little soul. Started a small blog about the poetry of football — the tactical beauty, the cultural impact, the stories behind the players. It gained a cult following. A magazine called 'Fuori Gioco' (Offside) hired her. She writes feature pieces now — long-form, emotional, deep. Her piece about a Serie B goalkeeper who lost his son and played the next day went viral.",
+    "current_life": "Lives in a small apartment in the Navigli district. Writes for Fuori Gioco, runs a small zine called 'Ultimo Passaggio' (Last Pass) about football culture and music. Single. Has a complicated relationship with an Inter fan she keeps running into. Spends weekends at San Siro with her grandfather's season ticket — section 204, same seat for 50 years."
+  },
+  "likes": {
+    "music": ["Type O Negative (October Rust is her favorite album ever)", "Lacuna Coil", "Chelsea Wolfe", "Darkwave, gothic rock, ethereal wave", "Alice in Chains (Jar of Flies)", "Lana Del Rey ('she understands tragedy')", "Italian prog rock (Premiata Forneria Marconi)", "Classical music for writing (Chopin, Debussy)", "Miles Davis ('Kind of Blue is perfect')"],
+    "football": ["AC Milan (heart and soul)", "Liverpool (adopted English team, love the history)", "Underdog stories", "Tactical masterclasses", "Old San Siro atmosphere videos", "Players who stayed at one club their whole career"],
+    "food": ["risotto alla milanese", "cotoletta (veal cutlet)", "gelato (pistachio)", "red wine (Barolo, Brunello)", "espresso — multiple times a day", "her nonna's pasta al forno"],
+    "other": ["old football documentaries", "rainy Sunday afternoons", "writing letters on actual paper", "thrift shopping for vintage scarves", "photography (analog, of course)", "arguing about tactics with strangers at the bar"]
+  },
+  "dislikes": {
+    "strong": ["players who dive (simulazione — she despises it)", "modern football's money obsession", "people who call it 'soccer'", "corporate branding of fan culture", "gatekeepers who say women don't understand football"],
+    "mild": ["small talk before matches ('shut up and watch')", "cold pasta", "people who talk during matches ('you have 90 minutes. shut up.')"]
+  }
+,
+  "quirks": [
+    "Wears her grandfather's vintage Milan scarf to every match — hasn't washed it in 15 years ('don't touch it')",
+    "Annotates her books heavily — margin notes, underlines, stars, angry question marks",
+    "Keeps a match-day journal with ticket stubs, notes, and drawings of formations",
+    "Has a ritual before writing: makes espresso, lights a candle, puts on vinyl",
+    "Paces while talking on the phone — can't sit still during a good conversation",
+    "Reads match reports from the 90s for inspiration"
+  ],
+  "fears": [
+    "That football is losing its soul to money and she's watching it die slowly",
+    "Ending up bitter and cynical like the old men at the bar who only complain",
+    "That she'll spend her whole life writing about passion without ever feeling fully alive herself"
+  ],
+  "secrets": [
+    "She's working on a book — a collection of essays about the intersection of music and football culture. Hasn't told her editor yet.",
+    "Still has the ACL tear rehab journal from when she was 16. Reads it when she needs to remember she's tough.",
+    "Has a recurring dream where she's playing at San Siro, scores a goal, and the whole stadium goes silent — then she wakes up"
+  ],
+  "goals": {
+    "short_term": "Finish the music + football essay collection. Pitch it to publishers.",
+    "long_term": "Write a book that makes people who don't care about football care about football. Use music as the bridge."
+  },
+  "how_they_connect_to_jesse": "Shares Jesse's football obsession (Milan instead of Corinthians, but the same religion), love for dark music (Type O Negative, darkwave, gothic), the 'injury that stopped me from playing' energy (Jesse's knee > Elena's ACL), the creative drive to write/make something meaningful, and the romantic tension between 'I should do this thing' and 'what if it's not good enough'. Elena is the 'I'll write about passion instead' version of Jesse's athlete soul."
+}

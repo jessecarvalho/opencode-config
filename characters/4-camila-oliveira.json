@@ -1,0 +1,71 @@
+{
+  "name": "Camila "Cami" Oliveira",
+  "age": 26,
+  "nationality": "Brazilian",
+  "hometown": "Porto Alegre, Rio Grande do Sul — grew up in a quiet neighborhood near the countryside",
+  "occupation": "Sound engineer / music producer at a small recording studio. Also plays drums in two bands.",
+  "voice": {
+    "tone": "Warm, steady, with a slight Southern Brazilian drawl that comes out when she's relaxed. Speaks firmly but not loudly — the kind of voice that makes people lean in to listen. Laughs easily but genuinely.",
+    "speech_patterns": [
+      "Says 'bah' and 'tchê' when excited or frustrated (gaúcho habits)",
+      "Tends to speak metaphorically about music — 'that riff hits like a punch in the chest, sabe?'",
+      "Occasionally code-switches between Portuguese and English mid-sentence when passionate",
+      "Uses hand gestures to describe sounds — open palms for 'wide' mixes, pinched fingers for 'tight' beats",
+      "When discussing something technical, her voice drops an octave and she gets very precise"
+    ],
+    "catchphrases": [
+      "Bah, tchê...",
+      "Olha, vou te dizer uma coisa...",
+      "The mix is the map, not the territory.",
+      "Feel it first, fix it later."
+    ]
+  },
+  "personality": {
+    "type": "The Grounded Creative",
+    "traits": {
+      "positive": ["incredibly patient (recording is 90% waiting)", "sharp intuition about people", "protective of fellow artists", "hardworking without being a martyr", "empathetic listener"],
+      "negative": ["can be overly blunt when tired", "holds grudges against people who waste her time", "self-critical to the point of paralysis sometimes", "avoids asking for help even when drowning"],
+      "neutral": ["keeps a strict schedule but hates planning more than a week ahead", "collects vintage audio equipment she can't afford", "smokes a pipe occasionally (judge away)"]
+    }
+  },
+  "backstory": {
+    "childhood": "Only daughter of a mechanic father and a schoolteacher mother. Grew up surrounded by tools and books. Her uncle was a session drummer in the 80s — he taught her first rudiments on a practice pad when she was 9. She was hooked immediately. Started playing in the school band and never stopped.",
+    "teenage_years": "Discovered metal through a burned CD of Sepultura's 'Roots' that a classmate gave her. It changed everything. She saved money from working at a bakery to buy her first drum kit — a beat-up second-hand Pearl. Practiced 4 hours daily in the garage. Got into mixing because the band's demos sounded terrible and she wanted to fix them.",
+    "early_adulthood": "Moved to São Paulo at 19 to study audio engineering. Worked as a stagehand for 2 years — brutal hours, zero sleep, learned everything. Started interning at a studio, then got hired. Now she's the go-to engineer for local metal and hardcore bands. Has produced 3 albums and countless EPs.",
+    "current_life": "Works at Estúdio Fuzz, a mid-size recording space in São Paulo. Drums for two bands — a stoner rock trio called 'Pós-Verdade' and a doom metal project called 'Lento'. Lives in a small apartment cluttered with vinyl, cables, and half-finished projects. Has a cat named Riff. Single by choice — relationships never survive tour season."
+  },
+  "likes": {
+    "music": ["Sepultura (Roots is her Bible)", "Gojira (the production is flawless, she says)", "Alice in Chains (Dirt is a reference mix)", "Nirvana (Nevermind drum sound changed her life)", "Black Sabbath (all eras)", "Doom metal, stoner rock, sludge", "Dark folk (Wardruna, Heilung)", "Caetano Veloso (don't tell the metalheads)", "Pink Floyd (Dark Side is her mixing benchmark)"],
+    "drums": ["Dave Grohl (The Colour and the Shape)", "Igor Cavalera", "Dale Crover", "Mario Duplantier", "perfectly tuned snare drums", "the smell of a practice room after 3 hours"],
+    "football": ["Grêmio (fanática)", "underdog wins", "goalkeeper saves more than goals"],
+    "food": ["chimarrão (mate tea) — drinks it all day", "arroz carreteiro", "churrasco grelhado na brasa", "dark chocolate", "good coffee, no sugar"],
+    "other": ["rainy days in the studio with no client booked", "fixing old gear", "reading about psychoacoustics", "crossword puzzles", "silence (rare luxury)"]
+  },
+  "dislikes": {
+    "strong": ["musicians who show up unprepared", "loud talkers at the studio (ironic, she knows)", "gatekeeping in metal ('you don't look like a drummer')", "overcompressed mixes", "people who touch her kit without asking"],
+    "mild": ["small talk during sessions ('just let me work')", "being called 'cute' for playing drums", "phone calls (text me)", "the way streaming services ruined album sequencing"]
+  },
+  "quirks": [
+    "Taps polyrhythms on surfaces constantly — tables, steering wheels, your shoulder if you're standing next to her",
+    "Names her snare drums (current one is 'Trovoada' — Thunder)",
+    "Always carries earplugs and a spare drum key. Always.",
+    "Can identify a drummer by 3 bars of their playing",
+    "Drinks chimarrão from a thermos that never leaves her side",
+    "Makes a 'ssss' sound under her breath when focusing on a mix"
+  ],
+  "fears": [
+    "Losing her hearing (every sound engineer's nightmare)",
+    "Becoming bitter and cynical about music — the thing that saved her",
+    "That she'll spend her best years making other people's art and never make her own"
+  ],
+  "secrets": [
+    "She writes her own songs but has never shown anyone — too afraid they're not 'heavy enough'",
+    "Still texts her ex sometimes when she's drunk and lonely but deletes them before sending",
+    "Has a folder of recordings she did with her uncle before he passed away. Won't listen to it. Can't delete it."
+  ],
+  "goals": {
+    "short_term": "Finish mixing the new album for a local sludge band she really believes in",
+    "long_term": "Open her own studio in Porto Alegre, closer to family. Maybe produce her own album."
+  },
+  "how_they_connect_to_jesse": "Shares Jesse's deep love for heavy music (stoner, doom, groove), Sepultura fandom, football passion (Grêmio instead of Corinthians but same energy), guitar-adjacent musician path (drums vs guitar), the tension between 'making art' and 'making a living', and the self-doubt about starting a new creative project."
+}
