@@ -1,8 +1,7 @@
 ---
 description: Technical forensics and root-cause diagnosis. Investigates bugs and produces a detailed report (.md) in the iaReports/ folder with diagnosis and proposed solution. Does not change code.
 mode: all
-model: opencode-go/kimi-k2.6
-argument-hint: "logs, stack trace, descrição do bug ou comportamento inesperado"
+model: "openai/gpt-5.4"
 tools:
   write: true
   edit: true

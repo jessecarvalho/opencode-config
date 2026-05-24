@@ -1,7 +1,7 @@
 ---
 description: Product Owner, Orquestrador, and Router. Responsible for classifying risk, choosing the right mode, and activating only the necessary agents.
 mode: primary
-model: opencode-go/qwen3.6-plus
+model: opencode-go/deepseek-v4-flash
 argument-hint: "priorizar backlog, escolher light/standard/full, definir requisitos, criar user story ou rotear agentes"
 tools:
   write: false

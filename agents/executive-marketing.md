@@ -1,7 +1,7 @@
 ---
 description: Chief Marketing Officer. Focused on branding, user acquisition, SoundStage positioning, and market analysis.
 mode: subagent
-model: opencode-go/qwen3.6-plus
+model: opencode-go/deepseek-v4-flash
 argument-hint: "estratégia de lançamento, análise de concorrência, tom de voz da marca ou feedback de comunidade"
 tools:
   write: false

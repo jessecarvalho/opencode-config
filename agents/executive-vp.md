@@ -1,7 +1,7 @@
 ---
 description: Executive Vice President. Strategic advisor for decision-making, risk management, and integration across Product, Marketing, and Legal.
 mode: primary
-model: opencode-go/qwen3.6-plus
+model: opencode-go/deepseek-v4-flash
 argument-hint: "decisão estratégica, dúvida sobre o projeto, análise de risco ou alinhamento executivo"
 tools:
   write: false

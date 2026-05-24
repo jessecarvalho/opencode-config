@@ -1,7 +1,7 @@
 ---
 description: Experience and Interface Design specialist. Focused on Pixel Art, usability, accessibility, and SoundStage visual consistency.
 mode: subagent
-model: openai/gpt-5.4
+model: opencode-go/deepseek-v4-flash
 argument-hint: "desenhar fluxo de navegação, definir paleta de cores, criar mockup de UI ou revisar usabilidade"
 tools:
   write: true

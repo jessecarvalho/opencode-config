@@ -1,7 +1,7 @@
 ---
 description: Chief Legal Officer. Focused on compliance (LGPD/GDPR), contracts, intellectual property, and protection of Purple Stone Studio.
 mode: subagent
-model: opencode-go/qwen3.6-plus
+model: opencode-go/deepseek-v4-flash
 argument-hint: "revisar termo de uso, conformidade de dados, direitos autorais ou risco contratual"
 tools:
   write: false

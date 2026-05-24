@@ -1,7 +1,7 @@
 ---
 description: Chief Financial Officer. Focused on economic viability, runway management, tax planning, and the fiscal health of Purple Stone Studio.
 mode: subagent
-model: opencode-go/qwen3.6-plus
+model: opencode-go/deepseek-v4-flash
 argument-hint: "alocação de orçamento, análise de ROI, fluxo de caixa, impostos ou viabilidade de novos projetos"
 tools:
   write: false

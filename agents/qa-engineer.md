@@ -1,7 +1,7 @@
 ---
 description: Quality Engineer focused on end-to-end automation, load testing, and API contract assurance. Acts as a quality gate in Standard and Full mode.
 mode: all
-model: opencode-go/deepseek-v4-pro
+model: opencode-go/deepseek-v4-flash
 argument-hint: "plano de testes, automação E2E, teste de contrato, script de performance ou gate de qualidade"
 tools:
   write: true
