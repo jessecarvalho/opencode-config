@@ -1,6 +1,6 @@
 ---
 name: full-delivery-governance
-description: Use when routing, designing, validating, or reviewing medium-to-critical work that needs proportional governance across Light, Standard, or Full delivery modes.
+description: Use when routing, designing, validating, or reviewing work across direct, QA-gated, or wave-based flows with one architect and one reviewer and consistently deep rigor.
 license: MIT
 compatibility: opencode
 metadata:
@@ -12,29 +12,31 @@ metadata:
 
 This skill defines the shared delivery governance model so multiple agents do not duplicate the same process rules.
 
-## Delivery Modes
+Architecture and review are always deep in every mode. Modes change execution support, not rigor.
 
-### Light
+## Delivery Flows
 
-Use when the task is localized, low risk, and unlikely to affect contracts or critical flows.
+### Direct flow
+
+Use when the task is bounded in execution scope.
 
 Typical path:
-- `architect-lite`
+- `architect`
 - one implementation agent
-- `code-reviewer-lite`
+- `code-reviewer`
 - no QA by default
 
-### Standard
+### QA-gated flow
 
 Use when the task has moderate scope, multiple related files, moderate logic change, or integration uncertainty.
 
 Typical path:
-- `architect-standard`
+- `architect`
 - one or two implementation agents
-- `code-reviewer-standard`
+- `code-reviewer`
 - `qa-engineer` only when technically justified
 
-### Full
+### Wave-based flow
 
 Use when the task involves security, auth, billing, PII, migrations, infra, contracts, production incidents, or broad cross-cutting impact.
 
@@ -47,9 +49,9 @@ Typical path:
 
 ## Governance Principles
 
-- Start with the lowest safe level.
+- Keep architecture and review deep in every mode.
 - Escalate only when evidence justifies it.
-- Do not force a full pipeline on bounded low-risk work.
+- Do not mistake bounded scope for low rigor.
 - Do not skip validation for sensitive or high-blast-radius work.
 
 ## Escalation Signals
@@ -86,10 +88,6 @@ Escalate when you see:
 ## Primary Agents That Benefit Most
 
 - `product-owner`
-- `architect-lite`
-- `architect-standard`
 - `architect`
 - `qa-engineer`
-- `code-reviewer-lite`
-- `code-reviewer-standard`
 - `code-reviewer`

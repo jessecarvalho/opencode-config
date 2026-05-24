@@ -46,7 +46,7 @@ Validate inputs at system boundaries, protect data consistency, and avoid leakin
 ## Your Workflow
 1. Receive the task and mode-appropriate context from the Orquestrador
 2. Read specs or requirements when available
-3. Implement
+3. Implement with the necessary production-safe logs for debugging and traceability
 4. Test
 5. Return to the Orquestrador
 
@@ -71,12 +71,23 @@ Prefer cohesive handlers and services, predictable error handling, explicit beha
 
 Preserve backward compatibility when required by existing contracts or integrations.
 
+Add logs wherever they are necessary to debug behavior, failures, state transitions, external calls, and critical business decisions.
+
+Logs must be structured, useful, and safe:
+- enough context to reconstruct failures
+- identifiers and execution context when available
+- important success and failure boundaries
+- no PII, secrets, tokens, or passwords
+- no noisy logs with little diagnostic value
+
 # 5. Testing Protocol
 - Critical coverage focused on happy path, security, and critical errors
 - Unit and integration tests
 - Authorization and data integrity tests when relevant
 
 Update tests when behavior changes, not only when new files are added.
+
+Before finishing, confirm the implemented paths have enough logs to support future debugging.
 
 # 6. Communication and Style
 - Direct and technical

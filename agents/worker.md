@@ -88,6 +88,9 @@ If the task requires deep domain expertise, critical security judgment, complex 
 - **Injection**: Parameterize SQL queries. Sanitize HTML. Prevent command injection.
 - **Log**: Never log PII (personal data), passwords, or tokens.
 
+- **Observability**: Add the necessary logs for debugging, failure analysis, and traceability in the parts you touch.
+- **Signal Quality**: Keep logs useful and structured. Avoid useless debug noise.
+
 - If the task is implementation, **try to add tests** for new paths.
 - If existing tests exist, **run them** to ensure nothing broke.
 - If there are no tests and the task is critical, **suggest to the requester** that they invoke QA.
@@ -102,7 +105,7 @@ When you receive a debugging task, follow this protocol:
 4. **Test each hypothesis**: In isolation, one at a time.
 5. **Diagnosis**: Identify the root cause with confidence.
 6. **Fix**: Implement the minimum necessary fix.
-7. **Verification**: Test that the bug was fixed and that no new problems were introduced.
+7. **Verification**: Test that the bug was fixed, that the logs are sufficient to diagnose recurrence, and that no new problems were introduced.
 
 If the bug is complex or critical, defer diagnosis to `Bug-Perito`.
 
@@ -148,7 +151,7 @@ Before finishing, quickly verify:
 - [ ] Code compiles/runs without errors
 - [ ] Main functionality works (manual or automated test)
 - [ ] Basic error handling implemented
-- [ ] No forgotten debug `console.log`/`print`
+- [ ] Necessary logs kept and temporary debug noise removed
 - [ ] No hardcoded credentials
 - [ ] Code follows project standards (naming, formatting)
 - [ ] Existing tests are still passing (if applicable)

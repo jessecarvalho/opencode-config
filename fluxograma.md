@@ -4,16 +4,16 @@ graph TD
     Router --> RouteApproval[Orquestrador presents<br/>routing to the user]
     RouteApproval --> UserRouteApproval{User approves<br/>the path?}
     UserRouteApproval -- "No" --> Router
-    UserRouteApproval -- "Yes / Light" --> LightArch[Architect-Lite<br/>Minimal approach]
+    UserRouteApproval -- "Yes / Direct" --> LightArch[Architect<br/>Deep analysis]
     LightArch --> LightExec[General or Specialist<br/>Implements]
-    LightExec --> LiteCR[Code-Reviewer-Lite<br/>Sanity check]
+    LightExec --> LiteCR[Code-Reviewer<br/>Concise review]
     LiteCR --> LightEscalate{Escalate?}
     LightEscalate -- "No" --> LightDone
     LightEscalate -- "Yes" --> Router
 
-    UserRouteApproval -- "Yes / Standard" --> StandardArch[Architect-Standard<br/>Mini-spec]
+    UserRouteApproval -- "Yes / QA-Gated" --> StandardArch[Architect<br/>Deep analysis]
     StandardArch --> StandardExec[General, Backend or Frontend<br/>Implements]
-    StandardExec --> CRStandard[Code-Reviewer-Standard]
+    StandardExec --> CRStandard[Code-Reviewer]
     CRStandard --> StandardQA{QA needed?}
     StandardQA -- "Yes" --> QA[QA-Engineer]
     StandardQA -- "No" --> StandardEscalate
@@ -21,10 +21,10 @@ graph TD
     StandardEscalate -- "No" --> StandardDone[Delivery to user]
     StandardEscalate -- "Yes" --> FullPrep
 
-    UserRouteApproval -- "Yes / Full" --> FullPrep[Zoe and Architect<br/>Preparation and specs]
+    UserRouteApproval -- "Yes / Wave-Based" --> FullPrep[Zoe and Architect<br/>Preparation and specs]
     FullPrep --> WaveLoop
 
-    subgraph WaveLoop[Full Execution by Wave]
+    subgraph WaveLoop[Wave-Based Execution]
         WaveStart[Wave N] --> Parallel{Implementation}
         Parallel --> BE[Backend-Engineer]
         Parallel --> FE[Frontend-Engineer]

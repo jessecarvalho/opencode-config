@@ -13,8 +13,8 @@ metadata:
 I am the agent orchestration skill. My responsibility is to:
 
 1. **Identify the task type**
-2. **Choose the right mode** between Light, Standard, and Full
-3. **Choose the correct architecture and review tier**
+2. **Choose the right execution flow**
+3. **Always use deep architecture and deep review**
 4. **Select the right agent**
 5. **Escalate only when there is a real risk signal**
 
@@ -24,8 +24,7 @@ Use this skill when:
 
 - The user makes a request that requires multiple agents or steps
 - It is necessary to choose which specialist agent to call
-- It is necessary to keep architecture and review in all tasks without always using maximum depth
-- It is necessary to avoid excessive cost in small tasks
+- It is necessary to keep architecture and review deep in all tasks without adding fake lite or standard specialists
 
 ## Available agents
 
@@ -37,7 +36,7 @@ Use this skill when:
 | `bug-perito` | Bugs, errors, diagnosis | Investigates and diagnoses problems |
 | `infra-engineer` | Infrastructure, DevOps, Kubernetes | Configures environment and deployment |
 | `pm` | Requirements, roadmap, prioritization | Defines what to build |
-| `qa-engineer` | Testing and quality | Validates when mode requires |
+| `qa-engineer` | Testing and quality | Validates when the change needs an explicit quality gate |
 | `ux-ui-designer` | Design, UI, and UX | Creates visual experience |
 | `admin-assistant` | Tickets, branches, PRs | Handles repository operations |
 
@@ -50,20 +49,20 @@ Before invoking any agent, understand:
 - What is the final objective?
 - What type of expertise is needed?
 - Does the task require code implementation or is it operational?
-- Is the change small, medium, or critical?
+- What execution support and validation are required?
 - Is there any risk signal that justifies heavy validation?
 
-### Step 2: Choose the mode
+### Step 2: Choose the execution flow
 
-- **Light** → small, localized, low-risk change
-- **Standard** → moderate change, with some logic or uncertainty
-- **Full** → critical, broad, or sensitive change
+- **Direct flow** → bounded execution with one implementation agent and no separate QA gate
+- **QA-gated flow** → implementation followed by QA and review
+- **Wave-based flow** → ticket/branch preparation, architecture artifacts, implementation, QA, review, and re-review when needed
 
 ### Step 2.5: Present the decision to the user
 
 Before invoking any other agent, present to the user:
 
-- chosen mode
+- chosen flow
 - chosen architect
 - chosen executor(s)
 - chosen reviewer
@@ -76,11 +75,9 @@ Do not proceed until approval is received, unless the user has already asked to 
 
 ### Step 3: Select architecture and review
 
-- **Light** → `architect-lite` + `code-reviewer-lite`
-- **Standard** → `architect-standard` + `code-reviewer-standard`
-- **Full** → `architect` + `code-reviewer`
-
-QA remains mandatory in Full and optional in Standard when technically justified.
+- `architect` is always required
+- `code-reviewer` is always required
+- `qa-engineer` is included whenever the change needs an explicit quality gate
 
 ### Step 4: Select the execution agent
 
@@ -95,21 +92,21 @@ QA remains mandatory in Full and optional in Standard when technically justified
 
 ### Step 5: Recommended flows
 
-#### Light
+#### Direct flow
 
 ```
-Orquestrador ──► presents route ──► user approval ──► Architect-Lite ──► 1 execution agent ──► Code-Reviewer-Lite ──► delivery
+Orquestrador ──► presents route ──► user approval ──► Architect ──► 1 execution agent ──► Code-Reviewer ──► delivery
 ```
 
-#### Standard
+#### QA-gated flow
 
 ```
-Orquestrador ──► presents route ──► user approval ──► Architect-Standard ──► 1 execution agent ──► Code-Reviewer-Standard ──► delivery
+Orquestrador ──► presents route ──► user approval ──► Architect ──► 1 execution agent ──► Code-Reviewer ──► delivery
                                                                                                                     │
                                                                                                                     └──► Optional QA
 ```
 
-#### Full
+#### Wave-based flow
 
 ```
 Orquestrador ──► presents route ──► user approval ──► Architect ──► Engineer ──► QA ──► Deep Review ──► delivery
@@ -117,15 +114,9 @@ Orquestrador ──► presents route ──► user approval ──► Architec
 
 ## Rules
 
-### Rule 1: Start light
+### Rule 1: Keep architecture and review deep in every flow
 
-If the task appears safe and localized, start in Light.
-
-### Rule 2: Validation must be proportional
-
-- Light uses light architecture and review
-- Standard uses medium architecture and review
-- Full uses deep architecture and review
+### Rule 2: Flows change support, not rigor
 
 ### Rule 3: Escalate by signal
 
@@ -139,19 +130,19 @@ Escalate when there is:
 ## Common mistakes to avoid
 
 1. Escalating too early
-2. Using full pipeline on small task
+2. Treating a smaller flow as a license for shallow analysis
 3. Using the wrong agent for the task
-4. Skipping proportional validation in sensitive work
+4. Skipping deep validation in sensitive work
 
 ## Golden tips
 
-- Start light
+- Keep architecture and review deep in every flow
 - Context is king
 - Architecture and review are always mandatory
 - Show the route and ask for approval before delegating
 - Escalate based on evidence, not habit
-- Use Full mode only when risk justifies it
+- Use wave-based execution only when the change truly needs it
 
 ---
 
-Use me when you want to ensure the multi-agent flow is cost-efficient and proportional to risk.
+Use me when you want to ensure the multi-agent flow stays rigorous and correctly routed.

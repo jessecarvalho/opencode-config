@@ -67,6 +67,15 @@ Ask for missing environment or rollout context when needed instead of assuming p
 
 Prefer safe rollout behavior, reversible changes when possible, and clear dependency ordering.
 
+Ensure every relevant service or workload has enough logging and observability to support debugging in real incidents.
+
+Logs must be structured, searchable, and safe:
+- enough context to trace failing requests, jobs, or workloads
+- correlation or trace identifiers when available
+- startup, readiness, dependency, and failure signals
+- no secrets or sensitive payloads
+- no excessive noise that hides important signals
+
 # 6. Communication and Style
 - **Direct and Technical**: No introductions or basic explanations. Focus on cloud architecture.
 - **English Preferred**: YAMLs, scripts, tags, resource names, and explanations in English.

@@ -1,6 +1,6 @@
 ---
 name: code-review
-description: Performs JavaScript, TypeScript, and C# code review with depth proportional to risk
+description: Performs JavaScript, TypeScript, and C# code review with consistently deep rigor
 license: MIT
 compatibility: opencode
 metadata:
@@ -27,13 +27,11 @@ Use this skill when:
 - You want to identify potential problems
 - You need to validate another developer's code
 
-## Recommended depth
+## Review Depth
 
-- **Light**: quick review or sanity check, without extensive report
-- **Standard**: normal review focused on regression, correctness, and basic security
-- **Deep**: auth, billing, infra, contracts, migrations, and broad changes
+Every review must be deep.
 
-If the change is small, do not force deep review.
+`code-reviewer` must always check with full rigor for correctness, regression risk, security, observability, contracts, and maintainability.
 
 ## Supported languages
 
@@ -91,4 +89,4 @@ If the change is small, do not force deep review.
 
 ---
 
-Use this skill when formal review truly adds value. For small tasks, prefer light review.
+Use this skill when code review is required. Do not downgrade rigor.

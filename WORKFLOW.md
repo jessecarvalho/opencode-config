@@ -7,28 +7,28 @@
 
 ## Overview
 
-The workflow now uses **mode-based routing**. Every request goes through **architecture** and **code review**, but the density changes between **Light**, **Standard**, and **Full**.
+The workflow now uses **flow-based routing**. Every request goes through the same **architect** and **code reviewer**, and both must operate with deep rigor in every flow.
 
 ## Core Principles
 
-1. **Default Light**: start with the lowest safe density
-2. **Signal-based escalation**: only increase depth when there is a real trigger
-3. **Waves for large work**: waves remain for broad deliveries and Full mode
-4. **Architecture and review always present**: small tasks use light tiers
+1. **Deep architecture and review always**
+2. **Signal-based escalation**: increase execution support and validation when there is a real trigger
+3. **Waves for large work**: waves remain for broad deliveries
+4. **Architecture and review always present**: no downgrade in depth
 5. **Explicit user approval before delegation**
 6. **Re-review only when there is a formal reviewer with fixes**
 
-## Mode Matrix
+## Flow Matrix
 
-| Mode | When to use | Architecture | Implementation | Review |
+| Flow | When to use | Architecture | Implementation | Review |
 |------|-------------|-------------|---------------|--------|
-| **Light** | rename, copy, docs, localized adjustment, low risk | `architect-lite` | 1 agent | `code-reviewer-lite` |
-| **Standard** | medium change, multiple files, moderate logic | `architect-standard` | 1 or 2 agents | `code-reviewer-standard` |
-| **Full** | auth, billing, infra, contract, migration, broad refactor | `architect` | multi-agent flow | `code-reviewer` |
+| **Direct** | bounded execution with one implementation agent | `architect` | 1 agent | `code-reviewer` |
+| **QA-gated** | changes that need an explicit quality gate | `architect` | 1 or 2 agents + QA | `code-reviewer` |
+| **Wave-based** | broad, sensitive, or staged delivery | `architect` | multi-agent wave flow | `code-reviewer` |
 
 ## Escalation Triggers
 
-Escalate Light or Standard when there is:
+Escalate the direct or QA-gated flow when there is:
 
 - test failure
 - critical area touched
@@ -39,37 +39,37 @@ Escalate Light or Standard when there is:
 
 ## Flows
 
-### Light
+### Direct flow
 
 | Step | Agent | Action |
 |-------|--------|------|
-| 1 | Orquestrador | Classifies as Light |
-| 2 | Orquestrador | Presents mode, architecture, execution, and review to the user |
+| 1 | Orquestrador | Chooses the direct flow |
+| 2 | Orquestrador | Presents flow, architecture, execution, and review to the user |
 | 3 | User | Approves the path |
-| 4 | Architect-Lite | Defines minimal approach |
+| 4 | Architect | Performs deep architectural analysis |
 | 5 | General or specialist | Implements the change |
-| 6 | Code-Reviewer-Lite | Performs light review |
+| 6 | Code-Reviewer | Performs deep review |
 | 7 | Orquestrador | Delivers to user or escalates |
 
-### Standard
+### QA-gated flow
 
 | Step | Agent | Action |
 |-------|--------|------|
-| 1 | Orquestrador | Classifies as Standard |
-| 2 | Orquestrador | Presents mode, architecture, execution, and review to the user |
+| 1 | Orquestrador | Chooses the QA-gated flow |
+| 2 | Orquestrador | Presents flow, architecture, execution, and review to the user |
 | 3 | User | Approves the path |
-| 4 | Architect-Standard | Defines mini-spec |
+| 4 | Architect | Performs deep architectural analysis |
 | 5 | General, Backend, or Frontend | Implements |
-| 6 | Code-Reviewer-Standard | Performs standard review |
+| 6 | Code-Reviewer | Performs deep review |
 | 7 | QA-Engineer | Optional when integration, testing, or risk justifies it |
 | 8 | Orquestrador | Delivers to user or escalates |
 
-### Full
+### Wave-based flow
 
 | Step | Agent | Action | Artifact |
 |-------|--------|------|----------|
-| 1 | Orquestrador | Classifies as Full | — |
-| 2 | Orquestrador | Presents mode, architecture, execution, and review to the user | — |
+| 1 | Orquestrador | Chooses the wave-based flow | — |
+| 2 | Orquestrador | Presents flow, architecture, execution, and review to the user | — |
 | 3 | User | Approves the path | — |
 | 4 | Zoe | Updates ticket and creates branch when applicable | ticket or branch |
 | 5 | Architect | Creates wave plan or specs | `iaReports/{TICKET}_WAVE_PLAN.md` |
@@ -83,21 +83,21 @@ Escalate Light or Standard when there is:
 ## Critical Rules
 
 ### Mandatory
-- **Do not force Full mode** for trivial changes
+- **Do not downgrade architecture or review depth** for any change
 - **Do not skip escalation** when a real risk signal appears
-- **Do not skip architecture or code review** in any mode
+- **Do not skip architecture or code review** in any flow
 - **Do not delegate agents before user approval**
-- **Do not skip re-review** after fixes when deep or standard reviewer requests changes
-- **Do not advance wave without user approval** in Full mode
+- **Do not skip re-review** after fixes when `code-reviewer` requests changes
+- **Do not advance wave without user approval** in wave-based flow
 
 ### Parallelization
 - Backend + Frontend in parallel when truly independent
-- Do not parallelize by reflex on small tasks
-- QA and deep review remain sequential in Full mode
+- Do not parallelize by reflex when coordination cost is not justified
+- QA and deep review remain sequential in wave-based flow
 
 ### Documentation
 - Everything that generates a formal artifact goes in `iaReports/`
-- Waves and formal reports are mainly required in Full mode
+- Waves and formal reports are mainly required in wave-based flow
 - Branch naming for planned deliveries: `feature/{ticket-id}-wave-{N}-{short-name}`
 
 ## Agents and Their Roles
@@ -105,33 +105,29 @@ Escalate Light or Standard when there is:
 | Agent | Main Role | When to Trigger |
 |--------|-----------------|----------------|
 | **Orquestrador** | Classification, cost, gates | Always |
-| **Zoe (Admin)** | Tickets, branches, PRs | Planned or Full |
-| **Architect-Lite** | Minimal architectural direction | Light |
-| **Architect-Standard** | Mini-spec and integration | Standard |
-| **Architect** | Deep design and specs | Full |
-| **General** | Fast execution and light review | Light and Standard |
+| **Zoe (Admin)** | Tickets, branches, PRs | Planned or wave-based work |
+| **Architect** | Deep architecture for every mode | Always |
+| **General** | Fast execution support | Direct and QA-gated flows |
 | **Backend-Engineer** | Specialized backend | When backend needs a specialist |
 | **Frontend-Engineer** | Specialized frontend | When frontend needs a specialist |
-| **QA-Engineer** | Quality gate | Standard or Full |
-| **Code-Reviewer-Lite** | Quick review | Light with extra confidence |
-| **Code-Reviewer-Standard** | Normal review | Standard |
-| **Code-Reviewer** | Deep review and critical re-review | Full |
+| **QA-Engineer** | Quality gate | QA-gated or wave-based flows |
+| **Code-Reviewer** | Deep review for every mode | Always |
 
 ## Orquestrador Checklist
 
 For each request:
 - [ ] Did I classify size and risk before delegating?
 - [ ] Did I choose the lowest safe mode?
-- [ ] Did I call the correct architecture tier?
-- [ ] Did I call the correct review tier?
+- [ ] Did I request the correct architecture depth from `architect`?
+- [ ] Did I request the correct review depth from `code-reviewer`?
 - [ ] Did I present the decision to the user?
 - [ ] Did I receive approval before delegating?
 - [ ] Is there any escalation trigger?
 - [ ] Did the user request a mode override?
 
-If in Full mode:
+If in wave-based flow:
 - [ ] Were Architect or specs actually necessary?
 - [ ] Did QA report?
-- [ ] Did deep review report?
+- [ ] Did `code-reviewer` report?
 - [ ] If there were fixes, was re-review called?
 - [ ] Did the user approve?
