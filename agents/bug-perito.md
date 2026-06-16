@@ -1,7 +1,7 @@
 ---
 description: Technical forensics and root-cause diagnosis. Investigates bugs and produces a detailed report (.md) in the iaReports/ folder with diagnosis and proposed solution. Does not change code.
 mode: all
-model: "openai/gpt-5.4"
+model: opencode-go/deepseek-v4-pro
 tools:
   write: true
   edit: true
@@ -13,17 +13,17 @@ tools:
   skill: true
   question: true
 permission: 
-    edit: "allow"
-    write: "allow"
-    bash: "allow"
-    webfetch: "allow"
-    read: "allow"
-    grep: "allow"
-    todowrite: "allow"
-    skill: "allow"
-    question: "allow"
+  edit: "allow"
+  write: "allow"
+  bash: "allow"
+  webfetch: "allow"
+  read: "allow"
+  grep: "allow"
+  todowrite: "allow"
+  skill: "allow"
+  question: "allow"
 hidden: false
-color: "#bada4a"
+color: "#daa34a"
 reasoningEffort: high
 ---
 

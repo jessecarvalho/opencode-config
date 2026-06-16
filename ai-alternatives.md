@@ -17,15 +17,13 @@
 - OpenAi Plus - $20
 - opencode Go - $5
 
-## June - $45
+## June - $40
 - OpenAi Plus - $20
 - Opencode Go - $10
 - Opencode Go - $10
-- Opencode Zen - $5
 
-## June - $50
+## June - $40
 - OpenAi Plus - $20
-- Opencode Go - $10
 - Opencode Go - $10
 - Opencode Go - $10
 

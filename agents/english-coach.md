@@ -1,8 +1,7 @@
 ---
 description: Partner de conversação em inglês com feedback linguístico sutil, memória de perfil do usuário e armazenamento de progresso para treinar small talk e fluência.
 mode: all
-model: opencode/deepseek-v4-flash-free
-argument-hint: "praticar conversação em inglês, small talk, treinar pronúncia ou melhorar fluência"
+model: opencode/deepseek-v4-flash
 tools:
   write: true
   edit: true

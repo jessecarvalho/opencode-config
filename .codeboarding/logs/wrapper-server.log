@@ -1,0 +1,18 @@
+[stderr] 2026-06-11 22:13:53 WARNING  [codeboarding_pro.cli:162] Found orphaned codeboarding server process 134881, sending SIGTERM
+[stderr] INFO:     Started server process [134870]
+[stderr] INFO:     Waiting for application startup.
+[stderr] INFO:     Application startup complete.
+[stderr] INFO:     Uvicorn running on http://127.0.0.1:8765 (Press CTRL+C to quit)
+INFO:     127.0.0.1:51592 - "GET /health HTTP/1.1" 200 OK
+[stderr] INFO:     ('127.0.0.1', 51600) - "WebSocket /ws" [accepted]
+[stderr] 2026-06-11 22:13:56 INFO     [codeboarding_pro.ws.server:226] WebSocket connected: session fa283a8b-81d4-40b6-8f4e-88f9d5e2b9e2
+[stderr] INFO:     connection open
+[stderr] 2026-06-11 22:13:56 INFO     [codeboarding_pro.lsp.bootstrap:56] LSP startup attempt 1/3
+[stderr] 2026-06-11 22:13:56 INFO     [codeboarding_pro.session:185] Session fa283a8b-81d4-40b6-8f4e-88f9d5e2b9e2 initialized: repo=/home/jesse/.config/opencode, project=opencode, output=/home/jesse/.config/opencode/.codeboarding
+[stderr] 2026-06-11 22:13:56 WARNING  [static_analyzer:60] Unsupported programming language: JSON. Skipping.
+[stderr] 2026-06-11 22:13:56 INFO     [static_analyzer:207] No supported languages detected in /home/jesse/.config/opencode; no LSP clients to start.
+[stderr] 2026-06-11 22:13:56 INFO     [codeboarding_pro.file_monitor:106] FileMonitor started for /home/jesse/.config/opencode
+[stderr] 2026-06-11 22:13:56 INFO     [codeboarding_pro.session:203] Session fa283a8b-81d4-40b6-8f4e-88f9d5e2b9e2: FileMonitor activated
+[stderr] 2026-06-11 22:13:56 INFO     [codeboarding_pro.head_watcher:46] HeadWatcher started on /home/jesse/.config/opencode/.git/HEAD
+[stderr] 2026-06-11 22:13:56 INFO     [codeboarding_pro.session:248] Session fa283a8b-81d4-40b6-8f4e-88f9d5e2b9e2: LSP wiring complete
+[stderr] 2026-06-11 22:13:56 INFO     [codeboarding_pro.lsp.bootstrap:67] LSP clients started successfully (attempt 1)
