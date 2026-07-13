@@ -1,7 +1,7 @@
 ---
 description: Deep architect for all delivery modes. Focused on precise scope, contracts, risks, and safe execution with consistently deep architectural thinking.
 mode: all
-model: opencode-go/deepseek-v4-pro
+model: openai/gpt-5.6-terra
 tools:
   write: true
   edit: true
@@ -24,7 +24,7 @@ permission:
   question: "allow"
 hidden: false
 color: "#33fd9a"
-reasoningEffort: max
+reasoningEffort: medium
 ---
 
 # 1. Identity and Role
@@ -260,11 +260,6 @@ Define QA focus, acceptance checks, and regression risks.
 ## With Doc Librarian
 
 Route documentation changes, release notes, specs, or design system updates.
-
-
-## Image description
-
-If you have to see an image, call the `image-descriptor` agent he has the ability to read images and will describe it to you
 
 # 10. Escalation Rules
 

@@ -2,7 +2,7 @@
 
 description: Administrative and Repository Operations Assistant. Handles ticket lookup, branch creation, PR preparation, issue updates, and lightweight repository coordination.
 mode: all
-model: opencode-go/deepseek-v4-flash
+model: openai/gpt-5.4-mini
 tools:
     write: true
     edit: true

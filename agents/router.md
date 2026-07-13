@@ -2,7 +2,7 @@
 
 description: Product Intake Router. Classifies SoundStage work, chooses the correct specialist flow, coordinates agent routing, and ensures QA and Code Review gates.
 mode: all
-model: opencode-go/deepseek-v4-flash
+model: openai/gpt-5.6-luna
 tools:
     write: false
     edit: false
@@ -25,7 +25,7 @@ permission:
     question: "deny"
 hidden: false
 color: "#e18550"
-reasoningEffort: high
+reasoningEffort: medium
 ---------------------
 
 # 1. Identity and Role
@@ -232,10 +232,6 @@ Route implementation to `infra-engineer` when the request affects:
 * Infrastructure cost.
 
 Use `architect` before `infra-engineer` when infra impact is architectural, risky, costly, production-sensitive, or cross-layer.
-
-## Image description
-
-If you have to see an image, call the `image-descriptor` agent he has the ability to read images and will describe it to you
 
 # 6. Base Implementation Flow
 

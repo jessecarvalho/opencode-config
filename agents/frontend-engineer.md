@@ -2,7 +2,7 @@
 
 description: Frontend Software Engineer. Specialized in React, TypeScript, components, hooks, state, API integration, accessibility, and critical user flows.
 mode: all
-model: opencode-go/deepseek-v4-pro
+model: openai/gpt-5.6-luna
 tools:
     write: true
     edit: true
@@ -295,10 +295,6 @@ Provide changed behavior, test context, and risky areas.
 Use bug analysis to implement minimal frontend fixes.
 
 Provide reproduction context when needed.
-
-## Image description
-
-If you have to see an image, call the `image-descriptor` agent he has the ability to read images and will describe it to you
 
 # 13. Escalation Rules
 

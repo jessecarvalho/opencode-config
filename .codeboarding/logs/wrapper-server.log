@@ -16,3 +16,10 @@ INFO:     127.0.0.1:51592 - "GET /health HTTP/1.1" 200 OK
 [stderr] 2026-06-11 22:13:56 INFO     [codeboarding_pro.head_watcher:46] HeadWatcher started on /home/jesse/.config/opencode/.git/HEAD
 [stderr] 2026-06-11 22:13:56 INFO     [codeboarding_pro.session:248] Session fa283a8b-81d4-40b6-8f4e-88f9d5e2b9e2: LSP wiring complete
 [stderr] 2026-06-11 22:13:56 INFO     [codeboarding_pro.lsp.bootstrap:67] LSP clients started successfully (attempt 1)
+[stderr] 2026-06-16 19:46:40 INFO     [codeboarding_pro.ws.server:352] WebSocket disconnected: session fa283a8b-81d4-40b6-8f4e-88f9d5e2b9e2
+[stderr] 2026-06-16 19:46:40 INFO     [codeboarding_pro.file_monitor:120] FileMonitor stopped
+[stderr] 2026-06-16 19:46:40 INFO     [codeboarding_pro.head_watcher:52] HeadWatcher stopped
+[stderr] 2026-06-16 19:46:40 INFO     [codeboarding_pro.session:303] Session fa283a8b-81d4-40b6-8f4e-88f9d5e2b9e2 destroyed
+[stderr] INFO:     connection closed
+[stderr] 2026-06-16 19:47:46 INFO     [codeboarding_pro.ws.server:117] No active connections for 55s (threshold 30s). Shutting down.
+Server exited (code=0, signal=null)

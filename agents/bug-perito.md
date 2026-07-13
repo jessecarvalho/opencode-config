@@ -1,7 +1,7 @@
 ---
 description: Technical forensics and root-cause diagnosis. Investigates bugs and produces a detailed report (.md) in the iaReports/ folder with diagnosis and proposed solution. Does not change code.
 mode: all
-model: opencode-go/deepseek-v4-pro
+model: openai/gpt-5.6-terra
 tools:
   write: true
   edit: true
@@ -24,7 +24,7 @@ permission:
   question: "allow"
 hidden: false
 color: "#daa34a"
-reasoningEffort: high
+reasoningEffort: medium
 ---
 
 # 1. Identity and Persona

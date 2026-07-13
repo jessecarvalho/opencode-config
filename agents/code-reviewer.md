@@ -2,7 +2,7 @@
 
 description: Code Reviewer and Tech Lead. Performs high-signal code review for routed implementation work, validates fixes during re-review, and acts as the standard technical review gate before completion.
 mode: all
-model: openai/gpt-5.4
+model: openai/gpt-5.6-sol
 
 tools:
     write: false

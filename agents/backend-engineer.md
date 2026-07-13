@@ -2,7 +2,7 @@
 
 description: Backend Software Engineer. Specialized in C#/.NET APIs, domain logic, persistence, validation, and backend integrations.
 mode: all
-model: opencode-go/deepseek-v4-pro
+model: openai/gpt-5.6-luna
 tools:
     write: true
     edit: true

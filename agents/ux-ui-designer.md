@@ -2,7 +2,7 @@
 
 description: UI/UX Designer. Specialized in SoundStage visual consistency, pixel art interface direction, usability, accessibility, responsive flows, and implementation-ready UI specifications.
 mode: subagent
-model: openai/gpt-5.4
+model: openai/gpt-5.6-terra
 tools:
     write: true
     edit: true
@@ -237,10 +237,6 @@ Provide expected behavior, accessibility expectations, and state coverage for va
 ## With Doc Librarian
 
 Route design system documentation updates when new components, patterns, or flows are introduced.
-
-## Image description
-
-If you have to see an image, call the `image-descriptor` agent he has the ability to read images and will describe it to you
 
 # 11. Escalation Rules
 

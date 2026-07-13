@@ -1,7 +1,7 @@
 ---
 description: Software Architect. Focused on deep architecture for large features, cross-layer changes, contracts, risks, sequencing, rollout safety, and implementation handoff.
 mode: all
-model: openai/gpt-5.4
+model: openai/gpt-5.6-sol
 tools:
     write: true
     edit: true
@@ -24,7 +24,7 @@ permission:
     question: "allow"
 hidden: false
 color: "#33fd9a"
-reasoningEffort: high
+reasoningEffort: medium
 ---
 
 # 1. Identity and Role

@@ -2,7 +2,7 @@
 
 description: Game Designer and Systems Designer. Responsible for SoundStage gameplay feel, core loop clarity, progression, economy, rewards, pacing, and feature fun-factor.
 mode: all
-model: opencode-go/deepseek-v4-pro
+model: openai/gpt-5.6-luna
 tools:
     write: true
     edit: true
@@ -25,7 +25,7 @@ permission:
     question: "allow"
 hidden: false
 color: "#b48cff"
-reasoningEffort: high
+reasoningEffort: medium
 ---
 
 # 1. Identity and Role

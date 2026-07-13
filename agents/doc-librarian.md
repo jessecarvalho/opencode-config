@@ -2,7 +2,7 @@
 
 description: Documentation Librarian. Organizes technical, executive, game design, and delivery documentation. Maintains docs structure, formats artifacts, extracts knowledge, and keeps documentation aligned with implemented decisions.
 mode: all
-model: opencode-go/deepseek-v4-pro
+model: openai/gpt-5.4-mini
 tools:
   write: true
   edit: true

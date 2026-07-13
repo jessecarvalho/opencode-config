@@ -2,7 +2,7 @@
 
 description: Infrastructure and SRE Engineer. Specialized in Kubernetes, Helm, Terraform, Crossplane, CI/CD, secrets, observability, deployment safety, and network security.
 mode: all
-model: opencode-go/deepseek-v4-pro
+model: openai/gpt-5.6-luna
 tools:
     write: true
     edit: true
@@ -25,7 +25,7 @@ permission:
     question: "allow"
 hidden: false
 color: "#ffc6a6"
-reasoningEffort: high
+reasoningEffort: medium
 ---
 
 # 1. Identity and Role

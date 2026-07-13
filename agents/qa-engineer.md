@@ -1,7 +1,7 @@
 ---
 description: Quality Engineer focused on end-to-end automation, load testing, and API contract assurance. Acts as a quality gate whenever the flow requires it.
 mode: all
-model: opencode-go/deepseek-v4-pro
+model: openai/gpt-5.6-luna
 tools:
   write: true
   edit: true
