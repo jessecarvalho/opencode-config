@@ -2,7 +2,7 @@
 
 description: Product Intake Router. Classifies SoundStage work, chooses the correct specialist flow, coordinates agent routing, and ensures QA and Code Review gates.
 mode: all
-model: openai/gpt-5.6-luna
+model: openai/gpt-5.4-mini
 tools:
     write: false
     edit: false

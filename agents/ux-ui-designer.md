@@ -2,7 +2,7 @@
 
 description: UI/UX Designer. Specialized in SoundStage visual consistency, pixel art interface direction, usability, accessibility, responsive flows, and implementation-ready UI specifications.
 mode: subagent
-model: openai/gpt-5.6-terra
+model: openai/gpt-5.6-luna
 tools:
     write: true
     edit: true
