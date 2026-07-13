@@ -2,7 +2,7 @@
 
 description: Frontend Software Engineer. Specialized in React, TypeScript, components, hooks, state, API integration, accessibility, and critical user flows.
 mode: all
-model: openai/gpt-5.6-luna
+model: openai/gpt-5.4-mini
 tools:
     write: true
     edit: true
